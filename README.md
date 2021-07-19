@@ -1,5 +1,5 @@
 ![baner_dogs](http://www.mf-data-science.fr/images/projects/dogs.jpg)
-# <div style="padding:5px; margin-top:-40px; background: #343434; border-bottom: 2px solid #e4bf13; color:white; text-align:center !important;" id="intro">Détection de race de chien<br/>à partir d'images grâce aux <br/>réseaux de neurones à convolution</div>
+# Dog breed detection from images thanks to convolutional neural networks
 
 ## Table of contents
 * [General information](#general-info)
