@@ -1,5 +1,5 @@
 ![baner_dogs](http://www.mf-data-science.fr/images/projects/dogs.jpg)
-# Dog breed detection from images thanks to convolutional neural networks
+# Dog breed detection from images with convolutional neural networks and transfert learning
 
 ## Table of contents
 * [General information](#general-info)
@@ -17,6 +17,7 @@ The objective of this Notebook is to detail the implementation of a **dog breed 
 - Implementation of 2 approaches to the use of CNNs :
     - Create a CNN neural network from scratch by optimizing the parameters.     
     - Use the transfer learning and thus use an already trained network.
+    - Fine-tuning of the pre-trained model
 
 ## <span id="data">Data</span>
 The [Stanford Dogs dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/) contains images of 120 breeds of dogs from around the world. This dataset has been built using images and annotation from ImageNet for the task of fine-grained image categorization. It was originally collected for fine-grain image categorization, a challenging problem as certain dog breeds have near identical features or differ in colour and age.
