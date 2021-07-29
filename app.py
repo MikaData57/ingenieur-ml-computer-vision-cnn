@@ -4,6 +4,7 @@ from tensorflow.keras import backend as K
 from tensorflow.keras.models import load_model
 import cv2 as cv
 import gradio as gr
+from gradio.networking import INITIAL_PORT_VALUE, LOCALHOST_NAME
 
 print(tf.__version__)
 
@@ -82,13 +83,25 @@ def breed_prediction(inp):
 image = gr.inputs.Image(shape=(299,299))
 label = gr.outputs.Label(num_top_classes=3)
 
-gr.Interface(
+iface = gr.Interface(
     fn=breed_prediction,
     inputs=image,
     outputs=label,
     capture_session=True,
     live=True,
+    verbose=True,
     title="Dogs breed prediction from picture\nwith Xception model",
     description=gradio_desc,
-    article=gradio_article
-).launch(share=True)
+    article=gradio_article,
+    allow_flagging=False,
+    allow_screenshot=True,
+    server_port=INITIAL_PORT_VALUE,
+    server_name=LOCALHOST_NAME
+)
+
+if __name__ == "__main__":
+    print("server_name:", LOCALHOST_NAME)
+    print("server_port:", INITIAL_PORT_VALUE)
+
+    # iface.launch(inbrowser=True)
+    iface.launch()
