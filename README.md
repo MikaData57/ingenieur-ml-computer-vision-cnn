@@ -40,3 +40,5 @@ Project is created with:
 ## <span id="setup">Setup</span>
 Download the Notebook and import it preferably into Google Colaboratoty, Kaggle or Jupyter via Anaconda.      
 Then just perform a *Run all* to run the project.
+
+An online application is available through Heroku at the following address for testing your images on the 15 preset dog breeds in the template: https://dogs-breeds-detection-cnn.herokuapp.com/ 
